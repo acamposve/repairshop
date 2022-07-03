@@ -1,0 +1,12 @@
+C:\proyectos\RepairShop.API\RepairShop.Core\bin\Debug\net6.0\RepairShop.Core.deps.json
+C:\proyectos\RepairShop.API\RepairShop.Core\bin\Debug\net6.0\RepairShop.Core.dll
+C:\proyectos\RepairShop.API\RepairShop.Core\bin\Debug\net6.0\RepairShop.Core.pdb
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.csproj.AssemblyReference.cache
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.AssemblyInfoInputs.cache
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.AssemblyInfo.cs
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.csproj.CoreCompileInputs.cache
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.dll
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\refint\RepairShop.Core.dll
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\RepairShop.Core.pdb
+C:\proyectos\RepairShop.API\RepairShop.Core\obj\Debug\net6.0\ref\RepairShop.Core.dll
