@@ -14,9 +14,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IGenerateIdService, GenerateIdService>();
 
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<ISalesOrderLineService, SalesOrderLineService>();
 builder.Services.AddScoped<IVendorService, VendorService>();
+
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ISalesOrderLineRepository, SalesOrderLineRepository>();
 builder.Services.AddScoped<IVendorRepository, VendorRepository>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
