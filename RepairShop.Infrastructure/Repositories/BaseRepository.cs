@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace RepairShop.Infrastructure.Repositories
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
         private readonly IConfiguration configuration;
 
