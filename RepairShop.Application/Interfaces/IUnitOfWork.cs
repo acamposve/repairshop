@@ -9,6 +9,7 @@ namespace RepairShop.Application.Interfaces
     public interface IUnitOfWork
     {
         ICustomerRepository Customers { get; }
+        ISalesOrderRepository SalesOrders { get; }
         ISalesOrderLineRepository SalesOrderLines { get; }
         IVendorRepository Vendors { get; }
     }
