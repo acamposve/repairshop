@@ -1,27 +1,22 @@
 ﻿using Microsoft.Extensions.Configuration;
-using RepairShop.Application.Interfaces;
-using System;
-using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RepairShop.Infrastructure.Repositories
 {
-    public class BaseRepository: IBaseRepository
+    public abstract class BaseRepository
     {
         private readonly IConfiguration configuration;
 
-        public BaseRepository(IConfiguration configuration)
+        protected BaseRepository(IConfiguration configuration)
         {
             this.configuration = configuration;
         }
 
-        public SqlConnection Connection() { 
-        
-            return new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+        protected IDbConnection GetSqlConnection()
+        {
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            return new SqlConnection(connectionString);
         }
-        
     }
 }
