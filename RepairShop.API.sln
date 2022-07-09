@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepairShop.Application", "R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepairShop.Infrastructure", "RepairShop.Infrastructure\RepairShop.Infrastructure.csproj", "{96DE34BD-27F7-45BE-AFA4-00F5012F323C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairShop.Infrastructure.IoC", "RepairShop.Infrastructure.IoC\RepairShop.Infrastructure.IoC.csproj", "{AEF64BE7-BFD7-4396-B897-099B616323FA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{96DE34BD-27F7-45BE-AFA4-00F5012F323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96DE34BD-27F7-45BE-AFA4-00F5012F323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96DE34BD-27F7-45BE-AFA4-00F5012F323C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEF64BE7-BFD7-4396-B897-099B616323FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEF64BE7-BFD7-4396-B897-099B616323FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEF64BE7-BFD7-4396-B897-099B616323FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEF64BE7-BFD7-4396-B897-099B616323FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

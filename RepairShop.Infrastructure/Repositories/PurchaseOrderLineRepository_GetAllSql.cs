@@ -8,14 +8,12 @@ namespace RepairShop.Infrastructure.Repositories
 {
     public partial class PurchaseOrderLineRepository
     {
-        public const string GetAllSql = @"SELECT [PurchaseOrderLineId]
-                                              ,[PurchaseOrderId]
-                                              ,[ProductId]
-                                              ,[Quantity]
-                                              ,[Price]
-                                              ,[SubTotal]
-                                              ,[Discount]
-                                              ,[Total]
-                                          FROM [PurchaseOrderLine]";
+        public const string GetAllSql = @"SELECT [PurchaseOrderId]
+                                              ,[Number]
+                                              ,[Description]
+                                              ,[PurchaseOrderDate]
+                                              ,[VendorId]
+                                          FROM [dbo].[PurchaseOrder]
+                                        WHERE  [PurchaseOrderId] = @Id";
     }
 }

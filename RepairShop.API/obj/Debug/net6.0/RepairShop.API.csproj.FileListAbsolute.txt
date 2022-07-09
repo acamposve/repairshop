@@ -38,4 +38,3 @@ C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Infrastru
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Application.pdb
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Infrastructure.pdb
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Core.pdb
-C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.MvcApplicationPartsAssemblyInfo.cs

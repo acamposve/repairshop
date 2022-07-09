@@ -15,6 +15,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGenerateIdService, GenerateIdService>();
 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IGoodsReceiveService, GoodsReceiveService>();
+builder.Services.AddScoped <IGoodsReceiveLineService, GoodsReceiveLineService>();
+builder.Services.AddScoped<IInvenTranService, InvenTranService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IPurchaseOrderService, PurchaseOrderService>();
 builder.Services.AddScoped<IPurchaseOrderLineService, PurchaseOrderLineService>();
 builder.Services.AddScoped<ISalesOrderService, SalesOrderService>();
 builder.Services.AddScoped<ISalesOrderLineService, SalesOrderLineService>();
@@ -22,6 +27,12 @@ builder.Services.AddScoped<IVendorService, VendorService>();
 
 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IGoodsReceiveRepository, GoodsReceiveRepository>();
+builder.Services.AddScoped<IGoodsReceiveLineRepository, GoodsReceiveLineRepository>();
+builder.Services.AddScoped<IInvenTranRepository, InvenTranRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+builder.Services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
 builder.Services.AddScoped<IPurchaseOrderLineRepository, PurchaseOrderLineRepository>();
 builder.Services.AddScoped<ISalesOrderRepository, SalesOrderRepository>();
 builder.Services.AddScoped<ISalesOrderLineRepository, SalesOrderLineRepository>();
