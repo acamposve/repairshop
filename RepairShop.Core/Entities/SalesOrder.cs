@@ -17,5 +17,8 @@ namespace RepairShop.Core.Entities
         public Guid CustomerId { get; set; }
         public Customer Customer { get; set; }
         public virtual List<SalesOrderLine> SalesOrderLine { get; set; } = new List<SalesOrderLine>();
+
+        public DateTime AddedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
     }
 }

@@ -9,13 +9,13 @@ namespace RepairShop.Infrastructure.Repositories
     public partial class SalesOrderLineRepository
     {
         public const string GetByIdAsyncSql = @"SELECT [SalesOrderLineId]
-      ,[SalesOrderId]
-      ,[ProductId]
-      ,[Quantity]
-      ,[Price]
-      ,[SubTotal]
-      ,[Discount]
-      ,[Total]
-  FROM [dbo].[SalesOrderLine] WHERE [SalesOrderLineId] = @Id";
+                                              ,[SalesOrderId]
+                                              ,[ProductId]
+                                              ,[Quantity]
+                                              ,[Price]
+                                              ,[SubTotal]
+                                              ,[Discount]
+                                              ,[Total]
+                                          FROM [SalesOrderLine] WHERE [SalesOrderLineId] = @Id";
     }
 }
