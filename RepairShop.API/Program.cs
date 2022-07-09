@@ -15,11 +15,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGenerateIdService, GenerateIdService>();
 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IPurchaseOrderLineService, PurchaseOrderLineService>();
 builder.Services.AddScoped<ISalesOrderService, SalesOrderService>();
 builder.Services.AddScoped<ISalesOrderLineService, SalesOrderLineService>();
 builder.Services.AddScoped<IVendorService, VendorService>();
 
+
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IPurchaseOrderLineRepository, PurchaseOrderLineRepository>();
 builder.Services.AddScoped<ISalesOrderRepository, SalesOrderRepository>();
 builder.Services.AddScoped<ISalesOrderLineRepository, SalesOrderLineRepository>();
 builder.Services.AddScoped<IVendorRepository, VendorRepository>();

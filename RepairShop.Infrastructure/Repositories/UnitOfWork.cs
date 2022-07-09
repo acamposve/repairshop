@@ -11,16 +11,19 @@ namespace RepairShop.Infrastructure.Repositories
     {
         public UnitOfWork(
             ICustomerRepository customerRepository,
+            IPurchaseOrderLineRepository purchaseOrderLineRepository,
             ISalesOrderRepository salesOrderRepository,
             ISalesOrderLineRepository salesOrderLineRepository,
             IVendorRepository vendorRepository)
         {
             Customers = customerRepository;
+            PurchaseOrderLines = purchaseOrderLineRepository;
             SalesOrders = salesOrderRepository;
             SalesOrderLines = salesOrderLineRepository;
             Vendors = vendorRepository;
         }
         public ICustomerRepository Customers { get; }
+        public IPurchaseOrderLineRepository PurchaseOrderLines { get; }
         public ISalesOrderRepository SalesOrders { get; }
         public ISalesOrderLineRepository SalesOrderLines { get; }
         public IVendorRepository Vendors { get; }

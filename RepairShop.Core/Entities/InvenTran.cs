@@ -18,5 +18,7 @@ namespace RepairShop.Core.Entities
         public string TranSourceType { get; set; }
         public int Quantity { get; set; }
         public DateTimeOffset? InvenTranDate { get; set; } = DateTime.Now;
+        public DateTime AddedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
     }
 }

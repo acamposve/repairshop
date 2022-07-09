@@ -19,5 +19,7 @@ namespace RepairShop.Core.Entities
         public int QtyPurchase { get; set; }
         public int QtyReceive { get; set; }
         public int QtyReceived { get; set; }
+        public DateTime AddedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
     }
 }
