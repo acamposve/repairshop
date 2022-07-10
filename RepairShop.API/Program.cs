@@ -2,9 +2,16 @@ using RepairShop.Application.Interfaces;
 using RepairShop.Application.Services;
 using RepairShop.Infrastructure.Repositories;
 
-
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddCors(opt => opt.AddPolicy("CorsPolicy", c =>
+{
+    c.AllowAnyOrigin()
+       .AllowAnyHeader()
+       .AllowAnyMethod();
+}));
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -48,7 +55,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();

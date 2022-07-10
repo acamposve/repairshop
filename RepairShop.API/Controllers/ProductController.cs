@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RepairShop.Application.Interfaces;
 using RepairShop.Core.Entities;
+using RepairShop.Core.Entities.Request;
 
 namespace RepairShop.API.Controllers
 {
@@ -23,10 +24,8 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpPost("CreateProduct")]
-        public async Task<IActionResult> CreateProduct(Product item)
+        public async Task<IActionResult> CreateProduct(ProductRequest item)
         {
-            item.AddedOn = DateTime.Now;
-            item.ModifiedOn = DateTime.Now;
             var data = await _service.AddAsync(item);
             return Ok(data);
         }
@@ -46,9 +45,9 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpPut("UpdateProduct/{id}")]
-        public async Task<IActionResult> UpdateProduct(Product item)
+        public async Task<IActionResult> UpdateProduct(Guid id, Product item)
         {
-            var data = await _service.UpdateAsync(item);
+            var data = await _service.UpdateAsync(id, item);
             return Ok(data);
         }
     }

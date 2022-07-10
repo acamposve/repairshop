@@ -1,4 +1,5 @@
 ﻿using RepairShop.Core.Entities;
+using RepairShop.Core.Entities.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace RepairShop.Application.Interfaces
     public interface IProductService
     {
         Task<IEnumerable<Product>> GetAll();
-        Task<int> AddAsync(Product entity);
+        Task<int> AddAsync(ProductRequest entity);
         Task<int> DeleteAsync(Guid id);
         Task<Product> GetByIdAsync(Guid id);
-        Task<int> UpdateAsync(Product entity);
+        Task<int> UpdateAsync(Guid id, Product entity);
     }
 }

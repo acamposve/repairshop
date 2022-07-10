@@ -13,6 +13,6 @@ namespace RepairShop.Application.Interfaces
         Task<int> AddAsync(Vendor entity);
         Task<int> DeleteAsync(Guid id);
         Task<Vendor> GetByIdAsync(Guid id);
-        Task<int> UpdateAsync(Vendor entity);
+        Task<int> UpdateAsync(Guid id, Vendor entity);
     }
 }
