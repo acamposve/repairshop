@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RepairShop.Application.Interfaces;
 using RepairShop.Core.Entities;
+using RepairShop.Core.Entities.Request;
 
 namespace RepairShop.API.Controllers
 {
@@ -10,9 +11,11 @@ namespace RepairShop.API.Controllers
     public class GoodsReceiveController : ControllerBase
     {
         private readonly IGoodsReceiveService _service;
-        public GoodsReceiveController(IGoodsReceiveService service)
+        private readonly IGenerateIdService _idservice;
+        public GoodsReceiveController(IGoodsReceiveService service, IGenerateIdService idservice)
         {
             _service = service;
+            _idservice = idservice;
         }
 
         [HttpGet("GetAllGoodsReceive")]
@@ -23,10 +26,14 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpPost("CreateGoodsReceive")]
-        public async Task<IActionResult> CreateGoodsReceive(GoodsReceive item)
+        public async Task<IActionResult> CreateGoodsReceive(GoodsReceiveRequest request)
         {
-            item.AddedOn = DateTime.Now;
-            item.ModifiedOn = DateTime.Now;
+            var item = new GoodsReceive
+            {
+                AddedOn = DateTime.Now,
+                ModifiedOn = DateTime.Now,
+                Number = _idservice.GenerateGRNumber()
+            };
             var data = await _service.AddAsync(item);
             return Ok(data);
         }
