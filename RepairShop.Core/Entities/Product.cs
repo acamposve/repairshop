@@ -17,5 +17,7 @@ namespace RepairShop.Core.Entities
         public decimal PriceSell { get; set; }
         [Required]
         public decimal PricePurchase { get; set; }
+        public DateTime AddedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
     }
 }

@@ -9,14 +9,12 @@ namespace RepairShop.Infrastructure.Repositories
     public partial class CustomerRepository
     {
         public const string UpdateAsyncSql = @"UPDATE [dbo].[Customer]
-                                           SET [Name] = @Name
-                                            ,[Description] = @Description,
-                                            [Phone] = @Phone,
-                                            [Email] = @Email,
-                                            [Address] = @Address,
-                                            [Address2] = @Address2
-                                         WHERE [CustomerId] = @ID";
-
-
+                                                SET [Name] = @Name
+                                                ,[Description] = @Description,
+                                                [Phone] = @Phone,
+                                                [Email] = @Email,
+                                                [Address] = @Address,
+                                                [Address2] = @Address2
+                                                WHERE [CustomerId] = @CustomerId";
     }
 }

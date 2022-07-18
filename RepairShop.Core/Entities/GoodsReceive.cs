@@ -16,5 +16,7 @@ namespace RepairShop.Core.Entities
         public DateTimeOffset? GoodsReceiveDate { get; set; } = DateTime.Now;
         public Guid PurchaseOrderId { get; set; }
         public PurchaseOrder PurchaseOrder { get; set; }
+        public DateTime AddedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
     }
 }

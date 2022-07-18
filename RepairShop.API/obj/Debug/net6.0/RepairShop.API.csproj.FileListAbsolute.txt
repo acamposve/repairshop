@@ -14,7 +14,6 @@ C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.Gener
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.AssemblyInfoInputs.cache
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.AssemblyInfo.cs
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.csproj.CoreCompileInputs.cache
-C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.MvcApplicationPartsAssemblyInfo.cs
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.MvcApplicationPartsAssemblyInfo.cache
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -39,3 +38,4 @@ C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Infrastru
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Application.pdb
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Infrastructure.pdb
 C:\proyectos\RepairShop.API\RepairShop.API\bin\Debug\net6.0\RepairShop.Core.pdb
+C:\proyectos\RepairShop.API\RepairShop.API\obj\Debug\net6.0\RepairShop.API.MvcApplicationPartsAssemblyInfo.cs

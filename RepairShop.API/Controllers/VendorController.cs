@@ -46,9 +46,9 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpPut("UpdateVendor/{id}")]
-        public async Task<IActionResult> UpdateVendor(Vendor item)
+        public async Task<IActionResult> UpdateVendor(Guid id, Vendor item)
         {
-            var data = await _service.UpdateAsync(item);
+            var data = await _service.UpdateAsync(id, item);
             return Ok(data);
         }
     }
