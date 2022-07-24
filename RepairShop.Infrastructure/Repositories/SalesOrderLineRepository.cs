@@ -26,10 +26,9 @@ namespace RepairShop.Infrastructure.Repositories
             entity.AddedOn = DateTime.Now;
             using var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
             connection.Open();
-            var result = await connection.ExecuteAsync(AddSql, entity);
-            return result;
+            return await connection.ExecuteAsync(AddSql, entity);
         }
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             using var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
             connection.Open();
@@ -43,7 +42,7 @@ namespace RepairShop.Infrastructure.Repositories
             var result = await connection.QueryAsync<SalesOrderLine>(GetAllSql);
             return result.ToList();
         }
-        public async Task<SalesOrderLine> GetByIdAsync(Guid id)
+        public async Task<SalesOrderLine> GetByIdAsync(int id)
         {
             using var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
             connection.Open();

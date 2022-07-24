@@ -9,12 +9,12 @@ namespace RepairShop.Core.Entities
 {
     public class GoodsReceive
     {
-        public Guid GoodsReceiveId { get; set; }
+        public int GoodsReceiveId { get; set; }
         [Required]
         public string Number { get; set; }
         public string Description { get; set; }
         public DateTimeOffset? GoodsReceiveDate { get; set; } = DateTime.Now;
-        public Guid PurchaseOrderId { get; set; }
+        public int PurchaseOrderId { get; set; }
         public PurchaseOrder PurchaseOrder { get; set; }
         public DateTime AddedOn { get; set; }
         public DateTime ModifiedOn { get; set; }

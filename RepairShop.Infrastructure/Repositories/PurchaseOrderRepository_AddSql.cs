@@ -19,6 +19,8 @@ namespace RepairShop.Infrastructure.Repositories
                                            ,@Number
                                            ,@Description
                                            ,@PurchaseOrderDate
-                                           ,@VendorId)";
+                                           ,@VendorId)
+
+                                    SELECT SCOPE_IDENTITY()";
     }
 }

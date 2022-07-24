@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RepairShop.Application.Interfaces;
 using RepairShop.Core.Entities;
+using RepairShop.Core.Entities.Request;
 
 namespace RepairShop.API.Controllers
 {
@@ -24,23 +25,24 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpPost("CreatePurchaseOrder")]
-        public async Task<IActionResult> CreatePurchaseOrder(PurchaseOrder item)
+        public async Task<IActionResult> CreatePurchaseOrder(PurchaseOrderRequest request)
         {
-            item.AddedOn = DateTime.Now;
-            item.ModifiedOn = DateTime.Now;
+            var item = new PurchaseOrder();
+            item.Description = request.Description;
+            item.VendorId = request.VendorId;
             var data = await _service.AddAsync(item);
             return Ok(data);
         }
 
         [HttpDelete("DeletePurchaseOrder/{id}")]
-        public async Task<IActionResult> DeletePurchaseOrder(Guid id)
+        public async Task<IActionResult> DeletePurchaseOrder(int id)
         {
             var data = await _service.DeleteAsync(id);
             return Ok(data);
         }
 
         [HttpGet("GetPurchaseOrderById/{id}")]
-        public async Task<IActionResult> GetPurchaseOrderById(Guid id)
+        public async Task<IActionResult> GetPurchaseOrderById(int id)
         {
             var data = await _service.GetByIdAsync(id);
             return Ok(data);

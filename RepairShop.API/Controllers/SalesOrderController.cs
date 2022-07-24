@@ -32,14 +32,14 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpDelete("DeleteSalesOrder/{id}")]
-        public async Task<IActionResult> DeleteSalesOrder(Guid id)
+        public async Task<IActionResult> DeleteSalesOrder(int id)
         {
             var data = await _service.DeleteAsync(id);
             return Ok(data);
         }
 
         [HttpGet("GetSalesOrderById/{id}")]
-        public async Task<IActionResult> GetSalesOrderById(Guid id)
+        public async Task<IActionResult> GetSalesOrderById(int id)
         {
             var data = await _service.GetByIdAsync(id);
             return Ok(data);

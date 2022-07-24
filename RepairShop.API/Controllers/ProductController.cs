@@ -31,21 +31,21 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpDelete("DeleteProduct/{id}")]
-        public async Task<IActionResult> DeleteProduct(Guid id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
             var data = await _service.DeleteAsync(id);
             return Ok(data);
         }
 
         [HttpGet("GetProductById/{id}")]
-        public async Task<IActionResult> GetProductById(Guid id)
+        public async Task<IActionResult> GetProductById(int id)
         {
             var data = await _service.GetByIdAsync(id);
             return Ok(data);
         }
 
         [HttpPut("UpdateProduct/{id}")]
-        public async Task<IActionResult> UpdateProduct(Guid id, Product item)
+        public async Task<IActionResult> UpdateProduct(int id, Product item)
         {
             var data = await _service.UpdateAsync(id, item);
             return Ok(data);

@@ -7,8 +7,8 @@ namespace RepairShop.Application.Interfaces
         Task<IEnumerable<SalesOrder>> GetAll();
 
         Task<int> AddAsync(SalesOrder entity);
-        Task<int> DeleteAsync(Guid id);
-        Task<SalesOrder> GetByIdAsync(Guid id);
+        Task<int> DeleteAsync(int id);
+        Task<SalesOrder> GetByIdAsync(int id);
         Task<int> UpdateAsync(SalesOrder entity);
     }
 }

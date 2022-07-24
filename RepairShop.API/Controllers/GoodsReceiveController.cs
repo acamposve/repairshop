@@ -39,14 +39,14 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpDelete("DeleteGoodsReceive/{id}")]
-        public async Task<IActionResult> DeleteGoodsReceive(Guid id)
+        public async Task<IActionResult> DeleteGoodsReceive(int id)
         {
             var data = await _service.DeleteAsync(id);
             return Ok(data);
         }
 
         [HttpGet("GetGoodsReceiveById/{id}")]
-        public async Task<IActionResult> GetGoodsReceiveById(Guid id)
+        public async Task<IActionResult> GetGoodsReceiveById(int id)
         {
             var data = await _service.GetByIdAsync(id);
             return Ok(data);

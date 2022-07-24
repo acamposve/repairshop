@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "F5a0FQE9hs/xsrues+jj4ziRlTfUsLiq2fpFUOJMYrUMFv4yDJhO1zAv1S96dbCV5RWAWNK19yuvQeAL/u+RPg==",
+  "dgSpecHash": "bDNe7kZMgSU6TgUtwH6u2iGPUGMiDlSXbA/n6OAFMw4dGY39tnYdv5mhYo0kFXPf/blngO3UoKVJLfGpzOdS/Q==",
   "success": true,
   "projectFilePath": "C:\\proyectos\\RepairShop.API\\RepairShop.Application\\RepairShop.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

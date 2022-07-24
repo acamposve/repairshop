@@ -27,7 +27,6 @@ namespace RepairShop.Application.Services
         {
             var entity = new Product
             {
-                ProductId = Guid.NewGuid(),
                 Name = request.Name,
                 Description = request.Description,
                 PricePurchase = request.PricePurchase,
@@ -36,16 +35,16 @@ namespace RepairShop.Application.Services
             return await _uow.Products.AddAsync(entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _uow.Products.DeleteAsync(id);
         }
 
-        public async Task<Product> GetByIdAsync(Guid id)
+        public async Task<Product> GetByIdAsync(int id)
         {
             return await _uow.Products.GetByIdAsync(id);
         }
-        public async Task<int> UpdateAsync(Guid id, Product entity)
+        public async Task<int> UpdateAsync(int id, Product entity)
         {
             entity.ProductId = id;
             return await _uow.Products.UpdateAsync(entity);

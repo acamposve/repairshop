@@ -11,8 +11,8 @@ namespace RepairShop.Application.Interfaces
     {
         Task<IEnumerable<GoodsReceive>> GetAll();
         Task<int> AddAsync(GoodsReceive entity);
-        Task<int> DeleteAsync(Guid id);
-        Task<GoodsReceive> GetByIdAsync(Guid id);
+        Task<int> DeleteAsync(int id);
+        Task<GoodsReceive> GetByIdAsync(int id);
         Task<int> UpdateAsync(GoodsReceive entity);
     }
 }
