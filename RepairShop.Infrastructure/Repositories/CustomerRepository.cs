@@ -18,14 +18,14 @@ namespace RepairShop.Infrastructure.Repositories
             return await connection.ExecuteAsync(AddSql, entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             using var connection = GetSqlConnection();
             var result = await connection.ExecuteAsync(DeleteAsyncSql, new { Id = id });
             return result;
         }
 
-        public async Task<Customer> GetByIdAsync(Guid id)
+        public async Task<Customer> GetByIdAsync(int id)
         {
             using var connection = GetSqlConnection();
             var result = await connection.QuerySingleOrDefaultAsync<Customer>(GetByIdAsyncSql, new { Id = id });

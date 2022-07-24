@@ -27,12 +27,12 @@ namespace RepairShop.Application.Services
             return await _uow.InvenTrans.AddAsync(entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _uow.InvenTrans.DeleteAsync(id);
         }
 
-        public async Task<InvenTran> GetByIdAsync(Guid id)
+        public async Task<InvenTran> GetByIdAsync(int id)
         {
             return await _uow.InvenTrans.GetByIdAsync(id);
         }

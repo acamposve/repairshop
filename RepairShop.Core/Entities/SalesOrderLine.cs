@@ -9,11 +9,11 @@ namespace RepairShop.Core.Entities
 {
     public class SalesOrderLine
     {
-        public Guid SalesOrderLineId { get; set; }
-        public Guid SalesOrderId { get; set; }
+        public int SalesOrderLineId { get; set; }
+        public int SalesOrderId { get; set; }
         [JsonIgnore]
         public SalesOrder SalesOrder { get; set; }
-        public Guid ProductId { get; set; }
+        public int ProductId { get; set; }
         public Product Product { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }

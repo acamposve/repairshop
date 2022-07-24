@@ -26,12 +26,12 @@ namespace RepairShop.Application.Services
             return await _uow.SalesOrders.AddAsync(entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _uow.SalesOrders.DeleteAsync(id);
         }
 
-        public async Task<SalesOrder> GetByIdAsync(Guid id)
+        public async Task<SalesOrder> GetByIdAsync(int id)
         {
             return await _uow.SalesOrders.GetByIdAsync(id);
         }

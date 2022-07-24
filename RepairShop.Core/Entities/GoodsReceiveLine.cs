@@ -9,12 +9,12 @@ namespace RepairShop.Core.Entities
 {
     public class GoodsReceiveLine
     {
-        public Guid GoodsReceiveLineId { get; set; }
-        public Guid GoodsReceiveId { get; set; }
+        public int GoodsReceiveLineId { get; set; }
+        public int GoodsReceiveId { get; set; }
         [JsonIgnore]
         public GoodsReceive GoodsReceive { get; set; }
-        public Guid PurchaseOrderLineId { get; set; }
-        public Guid ProductId { get; set; }
+        public int PurchaseOrderLineId { get; set; }
+        public int ProductId { get; set; }
         public Product Product { get; set; }
         public int QtyPurchase { get; set; }
         public int QtyReceive { get; set; }

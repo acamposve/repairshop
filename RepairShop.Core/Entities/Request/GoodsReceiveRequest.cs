@@ -9,6 +9,6 @@ namespace RepairShop.Core.Entities.Request
     public class GoodsReceiveRequest
     {
         public string Description { get; set; }
-        public Guid PurchaseOrderId { get; set; }
+        public int PurchaseOrderId { get; set; }
     }
 }

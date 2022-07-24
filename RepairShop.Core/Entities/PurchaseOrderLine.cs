@@ -9,11 +9,11 @@ namespace RepairShop.Core.Entities
 {
     public class PurchaseOrderLine
     {
-        public Guid PurchaseOrderLineId { get; set; }
-        public Guid PurchaseOrderId { get; set; }
+        public int PurchaseOrderLineId { get; set; }
+        public int PurchaseOrderId { get; set; }
         [JsonIgnore]
         public PurchaseOrder PurchaseOrder { get; set; }
-        public Guid ProductId { get; set; }
+        public int ProductId { get; set; }
         public Product Product { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }

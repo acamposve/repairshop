@@ -9,12 +9,12 @@ namespace RepairShop.Core.Entities
 {
     public class PurchaseOrder
     {
-        public Guid PurchaseOrderId { get; set; }
+        public int PurchaseOrderId { get; set; }
         [Required]
         public string Number { get; set; }
         public string Description { get; set; }
         public DateTimeOffset? PurchaseOrderDate { get; set; } = DateTime.Now;
-        public Guid VendorId { get; set; }
+        public int VendorId { get; set; }
         public Vendor Vendor { get; set; }
         public virtual List<PurchaseOrderLine> PurchaseOrderLine { get; set; } = new List<PurchaseOrderLine>();
         public DateTime AddedOn { get; set; }

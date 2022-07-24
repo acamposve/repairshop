@@ -26,16 +26,16 @@ namespace RepairShop.Application.Services
             return await _uow.Vendors.AddAsync(entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _uow.Vendors.DeleteAsync(id);
         }
 
-        public async Task<Vendor> GetByIdAsync(Guid id)
+        public async Task<Vendor> GetByIdAsync(int id)
         {
             return await _uow.Vendors.GetByIdAsync(id);
         }
-        public async Task<int> UpdateAsync(Guid id, Vendor entity)
+        public async Task<int> UpdateAsync(int id, Vendor entity)
         {
             entity.VendorId = id;
             return await _uow.Vendors.UpdateAsync(entity);

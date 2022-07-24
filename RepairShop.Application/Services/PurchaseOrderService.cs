@@ -6,9 +6,11 @@ namespace RepairShop.Application.Services
     public class PurchaseOrderService : IPurchaseOrderService
     {
         private readonly IUnitOfWork _uow;
-        public PurchaseOrderService(IUnitOfWork unitOfWork)
+        private readonly IGenerateIdService _idService;
+        public PurchaseOrderService(IUnitOfWork unitOfWork, IGenerateIdService idService)
         {
             _uow = unitOfWork;
+            _idService = idService;
         }
 
 
@@ -19,15 +21,19 @@ namespace RepairShop.Application.Services
 
         public async Task<int> AddAsync(PurchaseOrder entity)
         {
+            entity.AddedOn = DateTime.Now;
+            entity.ModifiedOn = DateTime.Now;
+            entity.Number = _idService.GeneratePONumber();
+            entity.PurchaseOrderDate = DateTime.Now;
             return await _uow.PurchaseOrders.AddAsync(entity);
         }
 
-        public async Task<int> DeleteAsync(Guid id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _uow.PurchaseOrders.DeleteAsync(id);
         }
 
-        public async Task<PurchaseOrder> GetByIdAsync(Guid id)
+        public async Task<PurchaseOrder> GetByIdAsync(int id)
         {
             return await _uow.PurchaseOrders.GetByIdAsync(id);
         }

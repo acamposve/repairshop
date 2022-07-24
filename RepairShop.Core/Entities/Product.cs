@@ -9,7 +9,7 @@ namespace RepairShop.Core.Entities
 {
     public class Product
     {
-        public Guid ProductId { get; set; }
+        public int ProductId { get; set; }
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }

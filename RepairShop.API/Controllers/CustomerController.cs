@@ -5,9 +5,6 @@ using RepairShop.Core.Entities.Request;
 
 namespace RepairShop.API.Controllers
 {
-
-
-
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -33,21 +30,21 @@ namespace RepairShop.API.Controllers
         }
 
         [HttpDelete("DeleteCustomer/{id}")]
-        public async Task<IActionResult> DeleteCustomer(Guid id)
+        public async Task<IActionResult> DeleteCustomer(int id)
         {
             var data = await _service.DeleteAsync(id);
             return Ok(data);
         }
 
         [HttpGet("GetCustomerById/{id}")]
-        public async Task<IActionResult> GetCustomerById(Guid id)
+        public async Task<IActionResult> GetCustomerById(int id)
         {
             var data = await _service.GetByIdAsync(id);
             return Ok(data);
         }
 
         [HttpPut("UpdateCustomer/{id}")]
-        public async Task<IActionResult> UpdateCustomer(Guid id, Customer item)
+        public async Task<IActionResult> UpdateCustomer(int id, Customer item)
         {
             var data = await _service.UpdateAsync(id, item);
             return Ok(data);

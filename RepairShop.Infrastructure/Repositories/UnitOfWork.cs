@@ -10,6 +10,7 @@ namespace RepairShop.Infrastructure.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         public UnitOfWork(
+            ICategoryRepository categoryRepository,
             IGoodsReceiveRepository goodsReceiveRepository,
             IGoodsReceiveLineRepository goodsReceiveLineRepository,
             IInvenTranRepository invenTranRepository,
@@ -21,6 +22,7 @@ namespace RepairShop.Infrastructure.Repositories
             ISalesOrderLineRepository salesOrderLineRepository,
             IVendorRepository vendorRepository)
         {
+            Categories = categoryRepository;
             GoodsReceives = goodsReceiveRepository;
             GoodsReceiveLines = goodsReceiveLineRepository;
             InvenTrans = invenTranRepository;
@@ -32,6 +34,7 @@ namespace RepairShop.Infrastructure.Repositories
             SalesOrderLines = salesOrderLineRepository;
             Vendors = vendorRepository;
         }
+        public ICategoryRepository Categories { get; }
         public IGoodsReceiveRepository GoodsReceives { get; }
         public IGoodsReceiveLineRepository GoodsReceiveLines { get; }
         public IInvenTranRepository InvenTrans { get; }

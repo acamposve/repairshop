@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dQy+ShNGv+Av4x87wtUkCaLBSJlxKS8e49PxrlxEKoSJpTgmD/GkE3wP56E4UpMQ3jJJY+v7QmYKQXUZRm/1Vw==",
+  "dgSpecHash": "uOhZ/+Gn+rI/DuZIrDAkyR68ObXbIdIU0ihNh1yrVfS88OIJ6CFxpOwn+e1LssfUQDYwlhLNDOmyziiL45Zx7Q==",
   "success": true,
   "projectFilePath": "C:\\proyectos\\RepairShop.API\\RepairShop.API\\RepairShop.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
